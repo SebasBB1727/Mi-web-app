@@ -1,93 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Página de Inicio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff; /* Blanco */
-            color: #000000; /* Negro */
-        }
-
-        header {
-            background-color: #000000; /* Negro */
-            color: #ffffff; /* Blanco */
-            padding: 20px;
-            text-align: center;
-        }
-
-        header span {
-            color: #f1c40f; /* Amarillo */
-        }
-
-        main {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .card {
-            background-color: #f9f9f9;
-            border-left: 5px solid #f1c40f; /* Amarillo */
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 500px;
-        }
-
-        footer {
-            background-color: #000000; /* Negro */
-            color: #ffffff; /* Blanco */
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        button {
-            background-color: #f1c40f; /* Amarillo */
-            color: #000000; /* Negro */
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        button:hover {
-            background-color: #d4ac0d;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-yellow-500 text-white">
 
-    <header>
-        <h1>Página de <span>Inicio</span></h1>
-        <p>Proyecto escolar</p>
-    </header>
+  <!-- Header -->
+  <header class="flex justify-between items-center px-8 py-6">
+    <h1 class="text-2xl font-bold tracking-wide">MiProyecto</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="#" class="hover:text-yellow-300">Inicio</a>
+      <a href="#" class="hover:text-yellow-300">Servicios</a>
+      <a href="#" class="hover:text-yellow-300">Contacto</a>
+    </nav>
+  </header>
 
-    <main>
-        <div class="card">
-            <h2>Bienvenido</h2>
-            <p>
-                Esta es la página de inicio del proyecto.  
-                Aquí se presenta información general de forma clara y sencilla.
-            </p>
-        </div>
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center px-6 py-32">
+    <h2 class="text-5xl font-extrabold mb-6">
+      Bienvenido a tu
+      <span class="text-yellow-300">Landing Page</span>
+    </h2>
+    <p class="max-w-xl text-gray-200 mb-10">
+      Esta es una página moderna y atractiva, diseñada únicamente con HTML y Tailwind CSS,
+      ideal para presentar tu proyecto escolar con un toque profesional.
+    </p>
+    <div class="space-x-4">
+      <button class="px-8 py-3 bg-yellow-400 text-black font-semibold rounded-xl hover:bg-yellow-300 transition">
+        Empezar
+      </button>
+      <button class="px-8 py-3 border border-white rounded-xl hover:bg-white hover:text-black transition">
+        Saber más
+      </button>
+    </div>
+  </section>
 
-        <div class="card">
-            <h2>Contenido Principal</h2>
-            <p>
-                El diseño utiliza colores neutros con acentos en amarillo
-                para resaltar elementos importantes.
-            </p>
-            <button>Comenzar</button>
-        </div>
-    </main>
+  <!-- Features Section -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 pb-32">
+    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+      <h3 class="text-xl font-semibold mb-3 text-yellow-300">Diseño moderno</h3>
+      <p class="text-sm text-gray-200">
+        Uso de degradados, transparencias y tipografía clara para una apariencia actual.
+      </p>
+    </div>
 
-    <footer>
-        <p>© 2025 · Proyecto Escolar</p>
-    </footer>
+    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+      <h3 class="text-xl font-semibold mb-3 text-yellow-300">Responsive</h3>
+      <p class="text-sm text-gray-200">
+        Se adapta correctamente a computadoras, tablets y teléfonos móviles.
+      </p>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+      <h3 class="text-xl font-semibold mb-3 text-yellow-300">Sencillo</h3>
+      <p class="text-sm text-gray-200">
+        Código limpio, fácil de entender y perfecto para fines educativos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-300 border-t border-white/20">
+    © 2025 · Landing Page · Proyecto Escolar
+  </footer>
 
 </body>
 </html>
