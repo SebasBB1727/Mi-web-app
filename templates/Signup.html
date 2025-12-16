@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Cuenta</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-$END$
+<body class="relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-yellow-500 overflow-y-auto">
+
+  <!-- ================= FONDOS DECORATIVOS DIFUMINADOS ================= -->
+  <!-- Estas capas solo son visuales y sirven para dar profundidad -->
+  <div class="absolute -top-24 -left-24 w-96 h-96 bg-yellow-400/30 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+
+  <!-- ================= TARJETA PRINCIPAL ================= -->
+  <!-- Contenedor del formulario con efecto glassmorphism -->
+  <div class="relative w-full max-w-lg bg-white/10 backdrop-blur-2xl rounded-3xl p-8 shadow-2xl shadow-black/50 text-white border border-white/20 my-24 mx-auto">
+
+    <!-- ================= ENCABEZADO ================= -->
+    <!-- Título y subtítulo del formulario -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-extrabold mb-2 drop-shadow-lg">Crear cuenta</h1>
+      <p class="text-sm text-gray-200">Regístrate para comenzar</p>
+    </div>
+
+    <!-- ================= FORMULARIO ================= -->
+    <!-- Campos principales para el registro de usuario -->
+    <form class="space-y-5">
+
+      <!-- Nombre completo -->
+      <div>
+        <label class="block text-sm mb-2">Nombre completo</label>
+        <input
+          type="text"
+          placeholder="Tu nombre"
+          class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- Correo electrónico -->
+      <div>
+        <label class="block text-sm mb-2">Correo electrónico</label>
+        <input
+          type="email"
+          placeholder="ejemplo@correo.com"
+          class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- Contraseña -->
+      <div>
+        <label class="block text-sm mb-2">Contraseña</label>
+        <input
+          type="password"
+          placeholder="••••••••"
+          class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- Confirmar contraseña -->
+      <div>
+        <label class="block text-sm mb-2">Confirmar contraseña</label>
+        <input
+          type="password"
+          placeholder="••••••••"
+          class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      <!-- Aceptación de términos -->
+      <div class="flex items-start gap-2 text-sm">
+        <input type="checkbox" class="mt-1 accent-yellow-400" />
+        <p class="text-gray-200">
+          Acepto los <a href="#" class="text-yellow-300 hover:underline">términos y condiciones</a>
+        </p>
+      </div>
+
+      <!-- Botón de registro -->
+      <button
+        type="submit"
+        class="w-full py-3 bg-yellow-400 text-black font-semibold rounded-xl hover:bg-yellow-300 transition"
+      >
+        Crear cuenta
+      </button>
+    </form>
+
+    <!-- ================= DIVISOR ================= -->
+    <!-- Separador visual para futuras opciones (ej. redes sociales) -->
+    <div class="my-8 flex items-center gap-4">
+      <div class="flex-1 h-px bg-white/20"></div>
+      <span class="text-xs text-gray-300">o</span>
+      <div class="flex-1 h-px bg-white/20"></div>
+    </div>
+
+    <!-- ================= REDIRECCIÓN ================= -->
+    <!-- Enlace para usuarios que ya tienen cuenta -->
+    <p class="text-center text-sm text-gray-200">
+      ¿Ya tienes una cuenta?
+      <a href="#" class="text-yellow-300 font-semibold hover:underline">Inicia sesión</a>
+    </p>
+
+  </div>
 </body>
 </html>
