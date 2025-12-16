@@ -8,7 +8,10 @@ from Resources import *
 def crear_rutas(api):
 
     #Lo que hace esto es ejecutar un recurso en especifico en la ruta definida "/hola"
-    api.add_resource(HolaMundo, '/hola')
+    api.add_resource(Login, '/login')
 
     api.add_resource(PantallaInicio, '/')
+
+    api.add_resource(Signup, '/signup')
+
     #EL "/" define la ruta de incio en los sitios web
