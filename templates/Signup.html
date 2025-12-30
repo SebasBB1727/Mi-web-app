@@ -27,12 +27,13 @@
 
     <!-- ================= FORMULARIO ================= -->
     <!-- Campos principales para el registro de usuario -->
-    <form class="space-y-5">
+    <form class="space-y-5" action="/signup" method="post">
 
       <!-- Nombre completo -->
       <div>
         <label class="block text-sm mb-2">Nombre completo</label>
         <input
+          nombre="nombre"
           type="text"
           placeholder="Tu nombre"
           class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
@@ -43,6 +44,7 @@
       <div>
         <label class="block text-sm mb-2">Correo electrónico</label>
         <input
+          name="correo"
           type="email"
           placeholder="ejemplo@correo.com"
           class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
@@ -53,6 +55,7 @@
       <div>
         <label class="block text-sm mb-2">Contraseña</label>
         <input
+          name="password"
           type="password"
           placeholder="••••••••"
           class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
@@ -63,6 +66,7 @@
       <div>
         <label class="block text-sm mb-2">Confirmar contraseña</label>
         <input
+          name="passwordconfirmed"
           type="password"
           placeholder="••••••••"
           class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-yellow-400"
